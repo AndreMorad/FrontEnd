@@ -1,10 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My website</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/CSS/movie.css" />
+  <link rel="stylesheet" href="/CSS/projects.css" />
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <script src="/JavaScript/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+  <div class="navbar">
+    <img class="logo" src="/images/me.png" />
+    <a href="#" class="logo"></a>
+    <ul class="nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="banner-c" id="home"></div>
+  <div class="about-c" id="about">
+    <div class="text-part">
+      <h1 class="ml1">About Area</h1>
+      <p>
+        Hej,
+
+        Mitt namn är André och läser första året som .NET-utvecklare på Teknikhögskolan.
+        <br>
+        Under mina år har jag hunnit med att bygga många datorer, koda simpla hemsidor i olika språk och agerat som
+        PC-support för min familj och vänner under många år. Det har hållit mig uppdaterad och intresserad av den
+        omfattande IT-världen. Är för det mesta självlärd då jag kunde tittar på Youtube/Lynda.com klipp och även
+        e-böcker för att lära mig. Genom åren på min fritid har jag dessutom förskaffat mig goda kunskaper och
+        erfarenheter som har hjälpt mig. Gillar även att lära mig ännu mer.
+
+        Under min tid som montör, och även processtekniker, utvecklade jag en bra förmåga för att anpassa mig inför
+        förändringar och för kundens önskemål. Att arbeta mot ständiga förbättringar och utveckla kreativiteten, blev en
+        naturlig del av vardagen.
+        I min roll som lagledare/arbetsledarersättare handlade det bl.a. om att kunna entusiasmera teamet, vara flexibel
+        och att på ett effektivt sätt lyssna på medarbetarnas synpunkter och erfarenheter för att nå uppsatta mål.
+
+        Jag hoppas jag väckt ert intresse och ser fram emot ett personligt möte.
+
+      </p>
+    </div>
+  </div>
+  <div class="projects-c" id="projects">
+    <div class="text-part">
+      <h1 class="ml22">Project Area</h1>
+      <section class="tabs">
+        <div class="container">
+          <div id="tab-1" class="tab-item" class="tab-border">
+            <img src="/Images/csharp.svg" width="40px"></img>
+            <h5>C-Sharp</h5>
+          </div>
+          <div id="tab-2" class="tab-item">
+            <img src="/Images/sql.svg" width="40px"></img>
+            <h5>T-SQL</h5>
+          </div>
+          <div id="tab-3" class="tab-item ">
+            <img src="/images/js.svg" width="40px"></img>
+            <h5>FrontEnd</h5>
+          </div>
+        </div>
+      </section>
+      <section class="tab-content">
+        <div class="container">
+          <div id="tab-1-content" class="tab-content-item show">
+            <div class="tab-1-content-inner">
+              <div>
+                <video width="800" height="430" controls>
+                  <source src="/images/project_Csharp.webm" type="video/webm">
+                </video>
+              </div>
+            </div>
+          </div>
+          <div id="tab-2-content" class="tab-content-item">
+            <div class="tab-2-content-inner">
+              <div>
+                <img src="/images/project_SQL.png" width="1000px" alt="image">
+              </div>
+            </div>
+          </div>
+          <div id="tab-3-content" class="tab-content-item">
+            <div class="tab-3-content-inner">
+              <div id="movie-body">
+                <div id="background-body">
+                  <div class="header">
+                    <h3>Movie Search</h3>
+                  </div>
+                  <div class="main-header">
+                    <section id="searchbox-wrap">
+                      <input type="text" placeholder="Serach for a movie..." id="searchbox" list="movies" />
+                      <datalist id="movies"></datalist>
+                      <button id="searchbutton">Search</button>
+                    </section>
+                  </div>
+                  <div class="main-content">
+                    <h5 id="name-text"></h5>
+                    <div id="info"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="contact-c" id="contact">
+    <div class="text-part">
+      <h1 class="ml3">Contact Me</h1>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" />
+        <input type="email" name="name" placeholder="Your Mail" />
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Submit" />
+        <div class="social">
+          <div class="social-items">
+            <span>Follow Me</span>
+            <span class="social-divider">|</span>
+            <ul>
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="/JavaScript/main.js"></script>
+  <script src="/JavaScript/project.js"></script>
+  <script src="/JavaScript/movieJquery.js"></script>
+  <script src="/JavaScript/ajax.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,58 @@
+.tabs {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding-bottom: 10px;
+    border: 1px solid black;
+}
+
+.tabs .container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tabs .container > div {
+    padding: 10px 0;
+}
+.tabs .container > div:hover {
+    color: white;
+    cursor: pointer;
+}
+.tab-border {
+    border-bottom: 2px solid white;
+}
+
+.tab-content {
+    width: 100%;
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.tab-1-content-inner {
+    margin: 5%;
+    text-align: center;
+}
+
+.tab-2-content-inner {
+    margin: 2%;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 10px;
+}
