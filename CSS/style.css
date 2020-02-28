@@ -14,14 +14,13 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   width: 100%;
   height: 70px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav {
   display: flex;
-  justify-content: right;
   list-style: none;
-  margin-right: 15%;
+  margin-right: 6%;
 }
 
 .logo {
@@ -46,6 +45,13 @@ a:hover {
   transition: all 1s ease 0s;
 }
 
+.ml1, 
+.ml2, 
+.ml3 {
+  color: white;
+  font-size: 50px;
+}
+
 #projects {
   background-image: url(/images/background2.jpg);
   width: 100%;
@@ -53,17 +59,28 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
 }
 
 .banner-c {
-  position: relative;
-  filter: brightness(30%);
+position: relative;
   background-image: url(/images/background1.jpg);
   width: 100%;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.backg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 100%;
+  content: " ";
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 
 .about-c,
@@ -83,14 +100,8 @@ a:hover {
   width: 65%;
   height: 80%;
 }
-h1 {
-  margin-bottom: 2%;
-  color: black;
-  font-size: 30px;
-  margin-top: 10px;
-}
 
-p {
+.about-text {
   font-size: 24px;
   line-height: 50px;
 }
@@ -129,6 +140,7 @@ contact
 
 .text-part form {
   display: flex;
+  padding-top: 20px;
   width: 50%;
   align-items: center;
   flex-direction: column;
@@ -141,7 +153,6 @@ contact
   border-radius: 10px;
   margin-bottom: 15px;
   padding: 6px;
-  width: 40%;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -200,4 +211,67 @@ social
 
 span {
   margin-top: 15px;
+}
+
+@media screen and (max-width: 703px){
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+  .resp {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+  .logo{
+    position: absolute;
+    left: 0%;
+}
+  .nav {
+    position: fixed;
+    background: rgb(59, 59, 59);
+    flex-direction: column;
+    margin-top: 5%;
+    right: 5%;
+    clip-path: circle(0px);
+    transition: all 1s ease-out;
+  }
+  .nav.open {
+    clip-path: circle(100px);
+  }
+  li {
+    margin: 5px;
+  }
+
+  .about-text {
+    font-size: 12px;
+    line-height: 20px;
+    width: 300px;
+    text-align: justify;
+  }
+
+.ml1, 
+.ml2, 
+.ml3 {
+  margin: 10px;
+  color: white;
+  font-size: 30px;
+}
+.social-items {
+  color: white;
+  margin-top: 20%;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+.social-items > span {
+}
+.social-divider {
+  padding-left: 20px;
+  text-align: center;
+}
 }

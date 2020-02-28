@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/CSS/movie.css" />
   <link rel="stylesheet" href="/CSS/projects.css" />
   <link rel="stylesheet" href="/CSS/style.css" />
+  <link rel="stylesheet" href="/CSS/banner.css" />
   <script src="/JavaScript/jquery-3.4.1.min.js"></script>
 
 </head>
@@ -17,7 +18,12 @@
 <body>
   <div class="navbar">
     <img class="logo" src="/images/me.png" />
-    <a href="#" class="logo"></a>
+    <div class="resp">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
     <ul class="nav">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About Me</a></li>
@@ -25,11 +31,46 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
-  <div class="banner-c" id="home"></div>
+  <div class="banner-c" id="home">
+    <div class="backg">
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <p class="author">Test1</p>
+          <q class="banner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum culpa
+            nobis pariatur, nihil id velit optio ducimus modi ad fuga atque, tempore hic? Minus et reiciendis velit
+            dolores voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusantium veniam,
+            commodi quam tempora quo, nihil maxime tempore in eius, neque sit obcaecati non quas sequi culpa corporis
+            quos molestiae!</q>
+        </div>
+
+        <div class="mySlides">
+          <p class="author">Test2</p>
+          <q class="banner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sit, tempora
+            obcaecati similique dolores corrupti maiores non repudiandae aliquid tempore totam optio recusandae
+            excepturi consequuntur molestias! Quas sapiente laudantium unde? Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Perspiciatis cum ea esse minus exercitationem. Saepe provident perferendis deleniti
+            accusantium, sequi consequuntur reprehenderit? Tenetur repellat error ea at non ullam omnis!</q>
+        </div>
+
+        <div class="mySlides">
+          <p class="author">Test3</p>
+          <q class="banner-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum soluta, eum suscipit
+            velit ipsam facere ad perferendis voluptas repellat repellendus incidunt itaque culpa eveniet eius vitae
+            adipisci in dolor eos? Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, obcaecati quasi non,
+            itaque cupiditate et voluptatibus debitis omnis, fugiat deleniti inventore laboriosam velit consequatur
+            magnam. Nam omnis ea magnam laborum?</q>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+      </div>
+    </div>
+  </div>
   <div class="about-c" id="about">
     <div class="text-part">
       <h1 class="ml1">About Area</h1>
-      <p>
+      <p class="about-text">
         Hej,
 
         Mitt namn är André och läser första året som .NET-utvecklare på Teknikhögskolan.
@@ -53,19 +94,19 @@
   </div>
   <div class="projects-c" id="projects">
     <div class="text-part">
-      <h1 class="ml22">Project Area</h1>
+      <h1 class="ml2">Project Area</h1>
       <section class="tabs">
         <div class="container">
-          <div id="tab-1" class="tab-item" class="tab-border">
-            <img src="/Images/csharp.svg" width="40px"></img>
+          <div id="tab-1" class="tab-item tab-border">
+            <img class="image-size" src="/Images/csharp.svg"></img>
             <h5>C-Sharp</h5>
           </div>
           <div id="tab-2" class="tab-item">
-            <img src="/Images/sql.svg" width="40px"></img>
+            <img class="image-size" src="/Images/sql.svg"></img>
             <h5>T-SQL</h5>
           </div>
           <div id="tab-3" class="tab-item ">
-            <img src="/images/js.svg" width="40px"></img>
+            <img class="image-size" src="/images/js.svg"></img>
             <h5>FrontEnd</h5>
           </div>
         </div>
@@ -75,7 +116,7 @@
           <div id="tab-1-content" class="tab-content-item show">
             <div class="tab-1-content-inner">
               <div>
-                <video width="800" height="430" controls>
+                <video width="100%" height="100%" controls>
                   <source src="/images/project_Csharp.webm" type="video/webm">
                 </video>
               </div>
@@ -84,7 +125,7 @@
           <div id="tab-2-content" class="tab-content-item">
             <div class="tab-2-content-inner">
               <div>
-                <img src="/images/project_SQL.png" width="1000px" alt="image">
+                <img src="/images/project_SQL.png" width="80%" height="80%" alt="image">
               </div>
             </div>
           </div>
@@ -137,10 +178,11 @@
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <script src="/JavaScript/main.js"></script>
+  <script src="/JavaScript/banner.js"></script>
   <script src="/JavaScript/project.js"></script>
   <script src="/JavaScript/movieJquery.js"></script>
   <script src="/JavaScript/ajax.js"></script>
+  <script src="/JavaScript/index.js"></script>
 </body>
 
 </html>

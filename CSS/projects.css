@@ -15,9 +15,6 @@
     text-align: center;
 }
 
-.tabs .container > div {
-    padding: 10px 0;
-}
 .tabs .container > div:hover {
     color: white;
     cursor: pointer;
@@ -41,18 +38,35 @@
 }
 
 .tab-1-content-inner {
-    margin: 5%;
+    margin: 1%;
     text-align: center;
 }
 
 .tab-2-content-inner {
-    margin: 2%;
+    margin: 1%;
     text-align: center;
 }
 
+.tab-3-content-inner {
+    margin: 0;
+    text-align: center;
+}
+.tab-1, .tab-2, .tab3 {
+    width: 10px;
+}
 .container {
     width: 100%;
     margin: auto;
     overflow: hidden;
     padding: 0 10px;
+}
+
+.image-size {
+    width: 50px;
+}
+
+@media screen and (max-width: 840px){
+    .image-size {
+        width: 100%;
+    }
 }
